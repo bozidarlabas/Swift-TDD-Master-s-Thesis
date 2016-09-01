@@ -20,6 +20,8 @@ class SimpleExample {
         return buffer
     }
     
-    func countWords(string: String) {}
+    func countWords(string: String) -> Int{
+        return 2
+    }
 
 }
