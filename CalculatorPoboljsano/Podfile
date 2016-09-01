@@ -1,0 +1,18 @@
+# Podfile
+
+use_frameworks!
+
+def testing_pods
+    pod 'Quick'
+    pod 'Nimble'
+end
+
+target 'Calculator' do
+   pod 'RxSwift',    '~> 2.0'
+   pod 'RxCocoa',    '~> 2.0'
+end
+
+target 'CalculatorTests' do
+    testing_pods
+end
+
