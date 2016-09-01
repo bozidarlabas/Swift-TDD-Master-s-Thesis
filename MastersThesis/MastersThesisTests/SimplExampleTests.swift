@@ -23,7 +23,17 @@ class SimplExampleTests: XCTestCase {
         let message = "word: " + word + " -> reversed word: " + reversedWord
         
         XCTAssertEqual(reversedWord, "radizob", message)
-    }      
+    }
+    
+    func testCountWords() {
+        let simpleExample = SimpleExample()
+        let inputString = "Hello world"
+        let expectedWordCount = 2
+        
+        let result = simpleExample.countWords(inputString)
+        
+        XCTAssertEqual(expectedWordCount, result)
+    }
 
 
 }
