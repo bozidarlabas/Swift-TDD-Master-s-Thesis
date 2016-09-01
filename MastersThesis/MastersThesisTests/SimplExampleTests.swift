@@ -12,12 +12,15 @@ import XCTest
 
 class SimplExampleTests: XCTestCase {
 
+    var simpleExample: SimpleExample!
+    
     override func setUp() {
         super.setUp()
+        simpleExample = SimpleExample()
     }
+
     
     func testWordReverse() {
-        let simpleExample = SimpleExample()
         let word = "bozidar"
         let reversedWord = simpleExample.reverseWord(word)
         let message = "word: " + word + " -> reversed word: " + reversedWord
@@ -26,10 +29,8 @@ class SimplExampleTests: XCTestCase {
     }
     
     func testCountWords() {
-        let simpleExample = SimpleExample()
         let inputString = "Hello world"
         let expectedWordCount = 2
-        
         let result = simpleExample.countWords(inputString)
         
         XCTAssertEqual(expectedWordCount, result)
