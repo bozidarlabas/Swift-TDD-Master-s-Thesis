@@ -1,25 +1,91 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Rt2-52-ZMv">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Home View Controller-->
+        <scene sceneID="wWI-rE-pgY">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Rt2-52-ZMv" customClass="HomeViewController" customModule="MastersThesis" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Pyj-Oc-eGQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="iDY-dt-3sy"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="etz-T3-bwq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter word" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hbO-fo-OEN">
+                                <rect key="frame" x="20" y="163" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3ze-5G-KDM"/>
+                                    <constraint firstAttribute="width" constant="560" id="whB-XP-B06"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufF-ZT-A49">
+                                <rect key="frame" x="20" y="207" width="560" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4ry-aW-hbf"/>
+                                    <constraint firstAttribute="height" constant="30" id="qeC-Qs-uP3"/>
+                                    <constraint firstAttribute="width" constant="560" id="sg1-en-1wp"/>
+                                    <constraint firstAttribute="width" constant="560" id="une-qZ-Jb2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="qeC-Qs-uP3"/>
+                                        <exclude reference="sg1-en-1wp"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TJ-eG-U51">
+                                <rect key="frame" x="20" y="245" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7mm-BA-9mH"/>
+                                    <constraint firstAttribute="width" constant="560" id="mJl-qh-8qh"/>
+                                </constraints>
+                                <state key="normal" title="Reverse word"/>
+                                <connections>
+                                    <action selector="onReverseWordClick" destination="Rt2-52-ZMv" eventType="touchUpInside" id="1X9-MS-FYa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hbO-fo-OEN" firstAttribute="centerX" secondItem="etz-T3-bwq" secondAttribute="centerX" id="3IG-PQ-b35"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hbO-fo-OEN" secondAttribute="trailing" id="6fy-VS-DdZ"/>
+                            <constraint firstItem="6TJ-eG-U51" firstAttribute="trailing" secondItem="ufF-ZT-A49" secondAttribute="trailing" id="AD7-tm-38m"/>
+                            <constraint firstItem="ufF-ZT-A49" firstAttribute="top" secondItem="hbO-fo-OEN" secondAttribute="bottom" constant="8" id="HaY-K4-ZQ8"/>
+                            <constraint firstItem="ufF-ZT-A49" firstAttribute="trailing" secondItem="hbO-fo-OEN" secondAttribute="trailing" id="Q49-CP-wuT"/>
+                            <constraint firstItem="ufF-ZT-A49" firstAttribute="top" secondItem="hbO-fo-OEN" secondAttribute="bottom" constant="14" id="TNj-rW-ccw"/>
+                            <constraint firstItem="6TJ-eG-U51" firstAttribute="top" secondItem="ufF-ZT-A49" secondAttribute="bottom" constant="8" id="XYg-gb-RxF"/>
+                            <constraint firstItem="iDY-dt-3sy" firstAttribute="top" secondItem="6TJ-eG-U51" secondAttribute="bottom" constant="325" id="fUz-m0-BH8"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="hbO-fo-OEN" secondAttribute="leading" id="lJg-Sh-Kne"/>
+                            <constraint firstItem="ufF-ZT-A49" firstAttribute="leading" secondItem="hbO-fo-OEN" secondAttribute="leading" id="mPf-B6-gCR"/>
+                            <constraint firstItem="6TJ-eG-U51" firstAttribute="leading" secondItem="ufF-ZT-A49" secondAttribute="leading" id="y82-e8-QeP"/>
+                            <constraint firstItem="hbO-fo-OEN" firstAttribute="top" secondItem="Pyj-Oc-eGQ" secondAttribute="bottom" constant="143" id="ykZ-Kf-bgT"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HaY-K4-ZQ8"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="reverseWordTextField" destination="hbO-fo-OEN" id="Wql-nF-aEj"/>
+                        <outlet property="reversedWordTextView" destination="ufF-ZT-A49" id="1sj-ke-4da"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zv1-o9-QkC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="411" y="253"/>
         </scene>
     </scenes>
 </document>

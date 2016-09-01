@@ -9,16 +9,24 @@
 /* Begin PBXBuildFile section */
 		D4A162B41D7815CD002BF2DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A162B31D7815CD002BF2DE /* AppDelegate.swift */; };
 		D4A162D71D781602002BF2DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A162D41D781602002BF2DE /* LaunchScreen.storyboard */; };
-		D4A162D81D781602002BF2DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A162D51D781602002BF2DE /* Main.storyboard */; };
-		D4A162D91D781602002BF2DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A162D61D781602002BF2DE /* ViewController.swift */; };
 		D4A162DD1D781628002BF2DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A162DB1D781628002BF2DE /* Assets.xcassets */; };
 		D4A162DE1D781628002BF2DE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4A162DC1D781628002BF2DE /* Info.plist */; };
 		D4A162E61D78224C002BF2DE /* SimpleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A162E51D78224C002BF2DE /* SimpleExample.swift */; };
 		D4A162E81D782354002BF2DE /* SimplExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A162E71D782354002BF2DE /* SimplExampleTests.swift */; };
+		D4A162FC1D782ECD002BF2DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A162FB1D782ECD002BF2DE /* Main.storyboard */; };
+		D4AF9CF81D782FD100AC2AE4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AF9CF71D782FD100AC2AE4 /* HomeViewController.swift */; };
+		D4AF9CFA1D78391100AC2AE4 /* SimpleExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AF9CF91D78391100AC2AE4 /* SimpleExampleUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		D4A162C51D7815CE002BF2DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4A162A81D7815CD002BF2DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4A162AF1D7815CD002BF2DE;
+			remoteInfo = MastersThesis;
+		};
+		D4A162F21D782481002BF2DE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D4A162A81D7815CD002BF2DE /* Project object */;
 			proxyType = 1;
@@ -33,12 +41,15 @@
 		D4A162C41D7815CE002BF2DE /* MastersThesisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MastersThesisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A162CA1D7815CE002BF2DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4A162D41D781602002BF2DE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D4A162D51D781602002BF2DE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		D4A162D61D781602002BF2DE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D4A162DB1D781628002BF2DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4A162DC1D781628002BF2DE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4A162E51D78224C002BF2DE /* SimpleExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleExample.swift; sourceTree = "<group>"; };
 		D4A162E71D782354002BF2DE /* SimplExampleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplExampleTests.swift; sourceTree = "<group>"; };
+		D4A162ED1D782481002BF2DE /* MastersThesisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MastersThesisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A162F11D782481002BF2DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4A162FB1D782ECD002BF2DE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D4AF9CF71D782FD100AC2AE4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D4AF9CF91D78391100AC2AE4 /* SimpleExampleUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleExampleUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +67,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D4A162EA1D782481002BF2DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -64,6 +82,7 @@
 			children = (
 				D4A162B21D7815CD002BF2DE /* MastersThesis */,
 				D4A162C71D7815CE002BF2DE /* MastersThesisTests */,
+				D4A162EE1D782481002BF2DE /* MastersThesisUITests */,
 				D4A162B11D7815CD002BF2DE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +92,7 @@
 			children = (
 				D4A162B01D7815CD002BF2DE /* MastersThesis.app */,
 				D4A162C41D7815CE002BF2DE /* MastersThesisTests.xctest */,
+				D4A162ED1D782481002BF2DE /* MastersThesisUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,8 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				D4A162D41D781602002BF2DE /* LaunchScreen.storyboard */,
-				D4A162D51D781602002BF2DE /* Main.storyboard */,
-				D4A162D61D781602002BF2DE /* ViewController.swift */,
+				D4A162FB1D782ECD002BF2DE /* Main.storyboard */,
+				D4AF9CF71D782FD100AC2AE4 /* HomeViewController.swift */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
@@ -122,6 +142,15 @@
 				D4A162E51D78224C002BF2DE /* SimpleExample.swift */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		D4A162EE1D782481002BF2DE /* MastersThesisUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D4A162F11D782481002BF2DE /* Info.plist */,
+				D4AF9CF91D78391100AC2AE4 /* SimpleExampleUITests.swift */,
+			);
+			path = MastersThesisUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +191,24 @@
 			productReference = D4A162C41D7815CE002BF2DE /* MastersThesisTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D4A162EC1D782481002BF2DE /* MastersThesisUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4A162F41D782481002BF2DE /* Build configuration list for PBXNativeTarget "MastersThesisUITests" */;
+			buildPhases = (
+				D4A162E91D782481002BF2DE /* Sources */,
+				D4A162EA1D782481002BF2DE /* Frameworks */,
+				D4A162EB1D782481002BF2DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4A162F31D782481002BF2DE /* PBXTargetDependency */,
+			);
+			name = MastersThesisUITests;
+			productName = MastersThesisUITests;
+			productReference = D4A162ED1D782481002BF2DE /* MastersThesisUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -176,6 +223,10 @@
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					D4A162C31D7815CE002BF2DE = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = D4A162AF1D7815CD002BF2DE;
+					};
+					D4A162EC1D782481002BF2DE = {
 						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = D4A162AF1D7815CD002BF2DE;
 					};
@@ -196,6 +247,7 @@
 			targets = (
 				D4A162AF1D7815CD002BF2DE /* MastersThesis */,
 				D4A162C31D7815CE002BF2DE /* MastersThesisTests */,
+				D4A162EC1D782481002BF2DE /* MastersThesisUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -205,14 +257,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4A162D81D781602002BF2DE /* Main.storyboard in Resources */,
 				D4A162D71D781602002BF2DE /* LaunchScreen.storyboard in Resources */,
 				D4A162DD1D781628002BF2DE /* Assets.xcassets in Resources */,
 				D4A162DE1D781628002BF2DE /* Info.plist in Resources */,
+				D4A162FC1D782ECD002BF2DE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D4A162C21D7815CE002BF2DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A162EB1D782481002BF2DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -226,9 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4A162D91D781602002BF2DE /* ViewController.swift in Sources */,
 				D4A162E61D78224C002BF2DE /* SimpleExample.swift in Sources */,
 				D4A162B41D7815CD002BF2DE /* AppDelegate.swift in Sources */,
+				D4AF9CF81D782FD100AC2AE4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +299,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D4A162E91D782481002BF2DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4AF9CFA1D78391100AC2AE4 /* SimpleExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -247,6 +314,11 @@
 			isa = PBXTargetDependency;
 			target = D4A162AF1D7815CD002BF2DE /* MastersThesis */;
 			targetProxy = D4A162C51D7815CE002BF2DE /* PBXContainerItemProxy */;
+		};
+		D4A162F31D782481002BF2DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4A162AF1D7815CD002BF2DE /* MastersThesis */;
+			targetProxy = D4A162F21D782481002BF2DE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -385,6 +457,31 @@
 			};
 			name = Release;
 		};
+		D4A162F51D782481002BF2DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = MastersThesisUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.foi.diplomski.MastersThesisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_TARGET_NAME = MastersThesis;
+			};
+			name = Debug;
+		};
+		D4A162F61D782481002BF2DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = MastersThesisUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.foi.diplomski.MastersThesisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MastersThesis;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -411,6 +508,15 @@
 			buildConfigurations = (
 				D4A162D11D7815CE002BF2DE /* Debug */,
 				D4A162D21D7815CE002BF2DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4A162F41D782481002BF2DE /* Build configuration list for PBXNativeTarget "MastersThesisUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4A162F51D782481002BF2DE /* Debug */,
+				D4A162F61D782481002BF2DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
