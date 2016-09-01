@@ -19,5 +19,7 @@ class SimpleExample {
         
         return buffer
     }
+    
+    func countWords(string: String) {}
 
 }
