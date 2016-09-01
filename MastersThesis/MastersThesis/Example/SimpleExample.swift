@@ -21,7 +21,8 @@ class SimpleExample {
     }
     
     func countWords(string: String) -> Int{
-        return 2
+        let words = string.componentsSeparatedByString(" ")
+        return words.count
     }
 
 }
