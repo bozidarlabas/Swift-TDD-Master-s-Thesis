@@ -1,0 +1,29 @@
+PODS:
+  - Nimble (4.0.1)
+  - Quick (0.9.2)
+
+DEPENDENCIES:
+  - Nimble (from `https://github.com/Quick/Nimble.git`)
+  - Quick (from `https://github.com/Quick/Quick.git`)
+
+EXTERNAL SOURCES:
+  Nimble:
+    :git: https://github.com/Quick/Nimble.git
+  Quick:
+    :git: https://github.com/Quick/Quick.git
+
+CHECKOUT OPTIONS:
+  Nimble:
+    :commit: 380bcfa89ac18fb89e84487320e2ec202521a87b
+    :git: https://github.com/Quick/Nimble.git
+  Quick:
+    :commit: f17f19431a645955fb7d97fb2f201684d228bb6b
+    :git: https://github.com/Quick/Quick.git
+
+SPEC CHECKSUMS:
+  Nimble: 0f3c8b8b084cda391209c3c5efbb48bedeeb920a
+  Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
+
+PODFILE CHECKSUM: f9b73cde7b9f68f653d31ac8b2ae2fb42da98f57
+
+COCOAPODS: 1.0.0

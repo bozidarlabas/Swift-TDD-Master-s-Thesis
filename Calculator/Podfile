@@ -1,0 +1,13 @@
+# Podfile
+
+use_frameworks!
+
+def testing_pods
+    pod 'Nimble', :git => 'https://github.com/Quick/Nimble.git'
+    pod 'Quick', :git => 'https://github.com/Quick/Quick.git'
+end
+
+target 'CalculatorTests' do
+    testing_pods
+end
+
