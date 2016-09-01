@@ -37,12 +37,12 @@ class SimplExampleTests: XCTestCase {
     }
     
     func testCountWords2() {
-        let string = "Hello world again"
-        let result = simpleExample.countWords(string)
+        let inputString = "Hello world again"
+        let expectedWordCount = 3
         
-        XCTAssertEqual(3, result)
+        let result = simpleExample.countWords(inputString)
+        
+        XCTAssertEqual(expectedWordCount, result)
     }
-
-
-
+    
 }
