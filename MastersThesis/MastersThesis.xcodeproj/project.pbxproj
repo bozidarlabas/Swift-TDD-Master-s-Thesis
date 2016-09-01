@@ -14,6 +14,7 @@
 		D4A162DD1D781628002BF2DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A162DB1D781628002BF2DE /* Assets.xcassets */; };
 		D4A162DE1D781628002BF2DE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4A162DC1D781628002BF2DE /* Info.plist */; };
 		D4A162E61D78224C002BF2DE /* SimpleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A162E51D78224C002BF2DE /* SimpleExample.swift */; };
+		D4A162E81D782354002BF2DE /* SimplExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A162E71D782354002BF2DE /* SimplExampleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		D4A162DB1D781628002BF2DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4A162DC1D781628002BF2DE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4A162E51D78224C002BF2DE /* SimpleExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleExample.swift; sourceTree = "<group>"; };
+		D4A162E71D782354002BF2DE /* SimplExampleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplExampleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				D4A162CA1D7815CE002BF2DE /* Info.plist */,
+				D4A162E71D782354002BF2DE /* SimplExampleTests.swift */,
 			);
 			path = MastersThesisTests;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4A162E81D782354002BF2DE /* SimplExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,10 +362,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MastersThesisTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.foi.diplomski.MastersThesisTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MastersThesis.app/MastersThesis";
 			};
 			name = Debug;
@@ -370,6 +376,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MastersThesisTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.foi.diplomski.MastersThesisTests;
