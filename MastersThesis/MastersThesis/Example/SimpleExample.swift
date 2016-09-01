@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+class SimpleExample {
+    
+    func reverseWord(word: String) -> String {
+        var buffer = ""
+        
+        for character in word.characters {
+            buffer.insert(character, atIndex: buffer.startIndex)
+        }
+        
+        return buffer
+    }
+
+}
