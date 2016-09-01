@@ -35,6 +35,14 @@ class SimplExampleTests: XCTestCase {
         
         XCTAssertEqual(expectedWordCount, result)
     }
+    
+    func testCountWords2() {
+        let string = "Hello world again"
+        let result = simpleExample.countWords(string)
+        
+        XCTAssertEqual(3, result)
+    }
+
 
 
 }
